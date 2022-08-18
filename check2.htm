@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pure CSS Custom Radio Buttons</title>
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+
+<style>
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: futura-pt, sans-serif;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #42586A;
+}
+.box {
+  width: 100%;
+  max-width: 360px;
+  padding: 15px;
+}
+.box h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.form {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+  margin-top: 10px;
+}
+.custom-radio-button__container input[type="radio"] {
+  display: none;
+}
+.custom-radio-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 5px 25px;
+  border: 2px solid #979797;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.svg-designer {
+  stroke: #979797;
+}
+.svg-developer {
+  fill: #979797;
+}
+.custom-radio-button h3 {
+  color: #979797;
+  font-weight: 500;
+  font-size: 1.375rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.custom-radio-button__container input[type="radio"]:checked + .custom-radio-button {
+  border: 2px solid #e94174;
+  box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, .5);
+}
+.custom-radio-button__container input[type="radio"]:checked + .custom-radio-button h3 {
+  color: #e94174;
+}
+.custom-radio-button__container input[type="radio"]:checked + .custom-radio-button .svg-designer {
+  stroke: #e94174;
+}
+.custom-radio-button__container input[type="radio"]:checked + .custom-radio-button .svg-developer {
+  fill: #e94174;
+}
+</style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div class="box">
+        <h1>Pure CSS<br>Custom Radio Buttons</h1>
+        <form class="form">
+          <label class="custom-radio-button__container">
+            <input type="radio" name="radio" checked>
+            <span class="custom-radio-button designer">
+              <svg class="svg-designer" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke-width="2" d="M31.398606,25.2671756 C34.2197146,25.2671756 36.5429804,27.4244939 36.5429804,30.0796548 C36.708928,32.9007634 34.053767,35.2240292 31.0667109,35.2240292 L31.0667109,35.2240292 L23.2671756,35.2240292 L23.4631052,35.1603266 C25.0047129,34.6191835 25.9223365,33.3255891 25.9223365,31.5731829 L25.9223365,31.5731829 L25.9223365,30.41155 C25.9223365,27.5904414 28.41155,25.2671756 31.398606,25.2671756 Z M50.6299696,10.3875938 L50.7520743,10.4978427 C51.4158646,11.1616329 51.4158646,12.1573183 50.7520743,12.8211085 L36.3146366,28.2542317 L36.0744268,28.0778339 C35.3844837,26.6780138 33.996137,25.6380417 32.3389279,25.3484095 L32,25.101228 L48.2628609,10.4978427 C48.8876047,9.87309892 49.953344,9.83634929 50.6299696,10.3875938 Z"/>
+                  <path stroke-width="2" d="M29.5731829,19.9568536 C17.6249585,19.9568536 8,26.5947561 8,34.8921341 C8,36.5516097 8.33189512,38.2110853 9.16163292,39.7046133 C10.8211085,43.0235646 15.1357451,44.0192499 18.1228012,41.8619316 C22.1055426,39.0408231 27.7477597,41.8619316 27.7477597,46.8403584 L27.7477597,49.8274145 C28.41155,49.8274145 28.9093926,49.8274145 29.5731829,49.8274145 C41.5214072,49.8274145 51.1463657,43.1895121 51.1463657,34.8921341 C51.1463657,31.2412878 49.3209426,27.9223365 46.3338865,25.4331231"/>
+                </g>
+              </svg>
+              Designer
+            </span>
+          </label>
+          <label class="custom-radio-button__container">
+            <input type="radio" name="radio">
+            <span class="custom-radio-button">
+              <svg class="svg-developer" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                <path d="M35.4173834,15.0396366 C35.9668587,15.1966295 36.2906567,15.765729 36.1336637,16.3152043 L26.2921684,51.5503087 C26.1646116,52.0114755 25.7426931,52.3058373 25.2913383,52.3058373 C25.2030298,52.3058373 25.1049092,52.2960252 25.0166007,52.266589 C24.4671254,52.1095961 24.1433274,51.5404967 24.3003204,50.9910214 L34.1418157,15.7559169 C34.2988087,15.2064416 34.8679081,14.8826436 35.4173834,15.0396366 Z M41.314431,18.6709285 L54.938,31.8343457 C54.9777079,31.8651783 55.0156072,31.8993406 55.0513138,31.9368325 C55.4437961,32.348939 55.4339841,33.0063469 55.0218776,33.3988293 L41.324243,46.6352971 C41.1181898,46.8217262 40.8630762,46.9198468 40.6079627,46.9198468 C40.333225,46.9198468 40.0682994,46.8119142 39.8622462,46.6058609 C39.4697638,46.1937545 39.4795759,45.5363465 39.8916824,45.1438641 L52.8222519,32.6487463 L39.8818703,20.1623615 C39.4697638,19.7698791 39.4599518,19.1124712 39.8524341,18.7003647 C40.2449165,18.2882582 40.9023245,18.2784461 41.314431,18.6709285 Z M20.5717379,18.7003647 C20.9642203,19.1124712 20.9544082,19.7698791 20.5423017,20.1623615 L7.62049148,32.6567463 L20.5423017,45.1438641 C20.9544082,45.5363465 20.9642203,46.1937545 20.5717379,46.6058609 C20.3656846,46.8217262 20.100759,46.9198468 19.8260214,46.9198468 C19.5709079,46.9198468 19.3059823,46.8217262 19.1097411,46.6254851 L5.41210648,33.3988293 L5.3894313,33.3760982 C5.38717068,33.3738748 5.38491699,33.3716398 5.38267031,33.3693931 L5.36949148,33.3527463 L5.35849148,33.341 L5.32549148,33.303 L5.33449148,33.315 L5.32414631,33.3037859 C5.31689334,33.294876 5.30981291,33.2858693 5.30290503,33.2767703 L5.32049148,33.297 L5.29077268,33.2585596 C5.19549352,33.1291263 5.13551628,32.9813687 5.10986488,32.8285532 C5.1076425,32.8105836 5.10506666,32.7929219 5.10294404,32.7752191 C5.10016444,32.7564585 5.09849586,32.737372 5.0973528,32.7182545 L5.09603972,32.6856743 L5.09549148,32.6530893 C5.09554675,32.631414 5.09627774,32.6096871 5.09768445,32.5879907 C5.09849586,32.5688537 5.10016444,32.5497671 5.10235852,32.5307355 C5.10506666,32.5133037 5.1076425,32.495642 5.11067156,32.4780407 C5.1357496,32.3234669 5.19658746,32.1744118 5.29237846,32.043574 C5.29642679,32.0398552 5.29936385,32.0358673 5.30233287,32.031896 C5.32183521,32.0043705 5.34400822,31.9778758 5.36773169,31.9523289 C5.37297379,31.947117 5.37779096,31.9419558 5.38267031,31.9368325 L5.39046596,31.9286204 C5.39755181,31.9214636 5.40476532,31.9143879 5.41210648,31.9073963 L19.1097411,18.6709285 C19.5218476,18.2784461 20.1792555,18.2882582 20.5717379,18.7003647 Z M5.33449148,33.315 L5.35849148,33.341 L5.36749148,33.352 L5.33449148,33.315 Z"/>
+              </svg>
+              Developer
+            </span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</
