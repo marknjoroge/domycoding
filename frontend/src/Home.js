@@ -7,6 +7,7 @@ import Stats from './components/Stats';
 
 import './Home.css';
 import Steps from './components/Steps';
+import DisciplinesCovered from './components/DisciplinesCovered';
 
 export default function HomePage() {
     return (
@@ -44,6 +45,10 @@ export default function HomePage() {
 
             <section className='banner1'>
                 <AdBanner text="Do not hesitate to ask for programming help, no matter what task you have"></AdBanner>
+            </section>
+
+            <section>
+                <DisciplinesCovered></DisciplinesCovered>
             </section>
 
             <section className='banner2'>

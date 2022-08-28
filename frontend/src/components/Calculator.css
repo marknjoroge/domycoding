@@ -8,7 +8,7 @@
 }
 
 .tab-btn {
-    background-color: #ffffff;
+    background-color: #e7e7e7;
     font-variant-caps: all-petite-caps;
     text-align: center;
     padding: 15px;
@@ -24,7 +24,7 @@
 }
 
 .active-btn {
-    background-color: #e7ebe7;
+    background-color: #ffffff;
     cursor: pointer;
 }
 

@@ -21,11 +21,11 @@ root.render(
     {/* <Router>
       <Switch>
         <Route path="/"> */}
-    {/* <HomePage /> */}
+    <HomePage />
     {/* <ContactUs></ContactUs> */}
     {/* <FAQ></FAQ> */}
     {/* <Guarantees></Guarantees> */}
-    <Test></Test>
+    {/* <Test></Test> */}
     {/* </Route>
       </Switch>
     </Router> */}

@@ -1,0 +1,15 @@
+#disciplines-tab {
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.a-container {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .a-container {
+        margin: 0;
+    }
+}

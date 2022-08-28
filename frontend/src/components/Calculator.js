@@ -6,10 +6,10 @@ import StyledButton from "./StyledButton";
 import './Calculator.css';
 
 export default function Calculator() {
-    const [toggleState, setToggleState] = useState(1);
+    const [calcToggleState, setCalcToggleState] = useState(1);
 
-    const toggleTab = (index) => {
-        setToggleState(index);
+    const calcTab = (index) => {
+        setCalcToggleState(index);
     };
 
     return (
@@ -20,19 +20,19 @@ export default function Calculator() {
                         <div className="my-calc" id="my-custom-tab">
                             <div className="row my-custom-tab-header">
                                 <button
-                                    className={toggleState === 1 ? "col tab-btn active-btn" : "col tab-btn"}
-                                    onClick={() => toggleTab(1)}
+                                    className={calcToggleState === 1 ? "col tab-btn active-btn" : "col tab-btn"}
+                                    onClick={() => calcTab(1)}
                                 >
                                     programming
                                 </button>
                                 <button
-                                    className={toggleState === 2 ? "col tab-btn active-btn" : "col tab-btn"}
-                                    onClick={() => toggleTab(2)}
+                                    className={calcToggleState === 2 ? "col tab-btn active-btn" : "col tab-btn"}
+                                    onClick={() => calcTab(2)}
                                 >
                                     Calculations
                                 </button>
                             </div>
-                            <div className={toggleState === 1 ? "my-custom-tab-body" : "hidden-body"}>
+                            <div className={calcToggleState === 1 ? "my-custom-tab-body" : "hidden-body"}>
                                 <div className="row">
                                     <div className="col-md">
                                         <label for="discipline" style={{ fontSize: '13px' }}>Discipline</label>
