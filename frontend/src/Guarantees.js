@@ -39,7 +39,7 @@ export default function Guarantees(params) {
             </section>
 
             <section class='contact-ad-1'>
-                <AdBanner text="Ask an expert to do your coding task"></AdBanner>
+                <AdBanner text="Get reliable and professional coding help from one of our tech experts"></AdBanner>
             </section>
 
             <section>
