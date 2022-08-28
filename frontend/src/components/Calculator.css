@@ -1,0 +1,78 @@
+#my-custom-tab {
+    padding: 0;
+    min-height: 20vh;
+    height: fit-content;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 7px !important;
+}
+
+.tab-btn {
+    background-color: #e7e7e7;
+    font-variant-caps: all-petite-caps;
+    text-align: center;
+    padding: 15px;
+    border: none;
+}
+
+.tab-btn:active {
+    border: none;
+}
+
+.tab-btn:hover {
+    background-color: #d8f366;
+}
+
+.active-btn {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.my-custom-tab-body {
+    padding: 40px;
+    display: block;
+}
+
+#task-size {
+    border: 1px black solid;
+    border-radius: 4px;
+}
+
+#task-size .tab-btn {
+    cursor: pointer;
+    font-variant: normal;
+    font-size: 13px;
+}
+
+#task-size .active-btn {
+    background-color: #d8f366;
+}
+
+
+.my-calc-side {
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 6px;
+}
+
+.my-calc-side .container {
+    background-color: #e7ebe7;
+    padding: 20px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.my-calc-side .title {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 5px;
+}
+
+.my-calc-side .title2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.hidden-body {
+    display: none;
+}

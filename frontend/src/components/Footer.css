@@ -1,0 +1,40 @@
+footer {
+    background-color: #212123;
+    color: #7d7a71;
+    /* bottom: 0; */
+}
+
+footer .the-stuff {
+    padding: 15px;
+}
+
+footer h5 {
+    color: white;
+    font-variant-caps: all-petite-caps;
+    font-weight: 600;
+}
+
+footer .the-stuff div {
+    padding-top: 8px;
+}
+
+footer a, .the-stuff, .the-footing {
+    font-weight: 500;
+    color: #7d7a71;
+}
+
+footer a:hover {
+    color: #676663;
+}
+
+.the-footing {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 40px;
+}
+
+footer hr {
+    background-color: #fff;
+    width: 95%;
+}

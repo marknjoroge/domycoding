@@ -1,0 +1,52 @@
+#guarantees-header .custom-card {
+    padding: 80px !important;
+}
+
+#guarantees-header .custom-title {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+#guarantees-header p {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+#guarantee-card-1 {
+    background-color: #d3f688 !important;
+}
+
+#guarantee-card-2 {
+    background-color: #e7ebe7 !important;
+}
+
+#guarantee-card-3 {
+    background-color: #212123;
+    color: #fff !important;
+}
+
+#guarantee-card-3 .custom-title {
+    color: white;
+}
+
+#guarantees-header a {
+    color: #212123;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+#guarantees-header a:hover {
+    color: #212123;
+    font-size: 14px;
+}
+
+@media (max-width:1024px) {
+    #guarantees-header .custom-title {
+        font-size: 24px;
+    }
+    
+    #guarantees-header .custom-card {
+        padding: 24px !important;
+    }
+}

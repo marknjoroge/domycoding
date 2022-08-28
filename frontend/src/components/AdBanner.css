@@ -1,0 +1,18 @@
+.cust-ad-banner {
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.the-but {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #000000;
+    color: white;
+}
+
