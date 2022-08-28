@@ -24,8 +24,8 @@ root.render(
     {/* <HomePage /> */}
     {/* <ContactUs></ContactUs> */}
     {/* <FAQ></FAQ> */}
-    <Guarantees></Guarantees>
-    {/* <Test></Test> */}
+    {/* <Guarantees></Guarantees> */}
+    <Test></Test>
     {/* </Route>
       </Switch>
     </Router> */}

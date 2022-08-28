@@ -1,13 +1,12 @@
 import { React } from 'react';
-import AdBanner from './components/AdBanner';
+import TabCalc from './components/CalcTab';
 import Calculator from './components/Calculator';
-import DisciplinedCovered from './components/DisciplinesCovered';
-import Footer from './components/Footer';
 
 export default function Test() {
     return(
         <div>
-            <Footer></Footer>
+            {/* <TabCalc></TabCalc> */}
+            <Calculator></Calculator>
         </div>
     );
 }

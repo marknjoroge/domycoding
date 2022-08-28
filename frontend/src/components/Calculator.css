@@ -30,6 +30,7 @@
 
 .my-custom-tab-body {
     padding: 40px;
+    display: block;
 }
 
 #task-size {
@@ -72,3 +73,6 @@
     font-size: 18px;
 }
 
+.hidden-body {
+    display: none;
+}

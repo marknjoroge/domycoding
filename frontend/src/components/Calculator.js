@@ -1,4 +1,4 @@
-import { React } from "react";
+import { useState } from "react";
 import CustomRadio from "./CustomRadio";
 import ListItemWithIcon from "./ListItemWithIcon";
 import StyledButton from "./StyledButton";
@@ -6,6 +6,12 @@ import StyledButton from "./StyledButton";
 import './Calculator.css';
 
 export default function Calculator() {
+    const [toggleState, setToggleState] = useState(1);
+
+    const toggleTab = (index) => {
+        setToggleState(index);
+    };
+
     return (
         <>
             <div className="container">
@@ -13,10 +19,20 @@ export default function Calculator() {
                     <div className="col">
                         <div className="my-calc" id="my-custom-tab">
                             <div className="row my-custom-tab-header">
-                                <button className="col tab-btn active-btn">programming</button>
-                                <button className="col tab-btn">Calculations</button>
+                                <button
+                                    className={toggleState === 1 ? "col tab-btn active-btn" : "col tab-btn"}
+                                    onClick={() => toggleTab(1)}
+                                >
+                                    programming
+                                </button>
+                                <button
+                                    className={toggleState === 2 ? "col tab-btn active-btn" : "col tab-btn"}
+                                    onClick={() => toggleTab(2)}
+                                >
+                                    Calculations
+                                </button>
                             </div>
-                            <div className="my-custom-tab-body">
+                            <div className={toggleState === 1 ? "my-custom-tab-body" : "hidden-body"}>
                                 <div className="row">
                                     <div className="col-md">
                                         <label for="discipline" style={{ fontSize: '13px' }}>Discipline</label>
