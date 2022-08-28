@@ -1,12 +1,12 @@
 import { React } from 'react';
-import AdBanner from './AdBanner';
-import Calculator from './Calculator';
-import Footer from './Footer';
-import NavBar from './NavBar';
-import Stats from './Stats';
+import AdBanner from './components/AdBanner';
+import Calculator from './components/Calculator';
+import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import Stats from './components/Stats';
 
 import './Home.css';
-import Steps from './Steps';
+import Steps from './components/Steps';
 
 export default function HomePage() {
     return (
@@ -30,11 +30,17 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <Stats></Stats>
+            <section className='container'>
+                <Stats></Stats>
+            </section>
 
-            <Steps></Steps>
+            <section className='container'>
+                <Steps></Steps>
+            </section>
 
-            <Calculator></Calculator>
+            <section className='container'>
+                <Calculator></Calculator>
+            </section>
 
             <section className='banner1'>
                 <AdBanner text="Do not hesitate to ask for programming help, no matter what task you have"></AdBanner>

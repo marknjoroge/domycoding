@@ -12,6 +12,15 @@
     font-variant-caps: all-petite-caps;
     text-align: center;
     padding: 15px;
+    border: none;
+}
+
+.tab-btn:active {
+    border: none;
+}
+
+.tab-btn:hover {
+    background-color: #d8f366;
 }
 
 .active-btn {
@@ -24,7 +33,7 @@
 }
 
 #task-size {
-    border: 5px black;
+    border: 1px black solid;
     border-radius: 4px;
 }
 

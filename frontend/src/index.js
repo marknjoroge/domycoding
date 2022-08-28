@@ -9,8 +9,9 @@ import {
   Route
 } from "react-router-dom";
 
-import HomePage from './components/Home';
-import Test from './components/Test'
+import HomePage from './Home';
+import Test from './Test'
+import ContactUs from './ContactUs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +19,8 @@ root.render(
     {/* <Router>
       <Switch>
         <Route path="/"> */}
-    <HomePage />
+    {/* <HomePage /> */}
+    <ContactUs></ContactUs>
     {/* <Test></Test> */}
     {/* </Route>
       </Switch>

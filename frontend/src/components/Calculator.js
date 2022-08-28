@@ -13,8 +13,8 @@ export default function Calculator() {
                     <div className="col">
                         <div className="my-calc" id="my-custom-tab">
                             <div className="row my-custom-tab-header">
-                                <div className="col tab-btn active-btn">programming</div>
-                                <div className="col tab-btn">Calculations</div>
+                                <button className="col tab-btn active-btn">programming</button>
+                                <button className="col tab-btn">Calculations</button>
                             </div>
                             <div className="my-custom-tab-body">
                                 <div className="row">
@@ -25,10 +25,10 @@ export default function Calculator() {
                                     </div>
                                     <div className="col-md">
                                         <div className="row my-custom-tab-header" id="task-size">
-                                            <div className="col tab-btn active-btn">Extra small</div>
-                                            <div className="col tab-btn">Small</div>
-                                            <div className="col tab-btn active-btn">Medium</div>
-                                            <div className="col tab-btn">Large</div>
+                                            <button className="col tab-btn active-btn">Extra small</button>
+                                            <button className="col tab-btn">Small</button>
+                                            <button className="col tab-btn">Medium</button>
+                                            <button className="col tab-btn">Large</button>
                                         </div>
                                     </div>
                                 </div>
