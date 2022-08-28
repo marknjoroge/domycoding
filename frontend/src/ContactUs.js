@@ -52,7 +52,7 @@ export default function ContactUs() {
 
             </section>
 
-            <section id='contact-ad-1'>
+            <section class='contact-ad-1'>
                 <AdBanner text="Ask an expert to do your coding task"></AdBanner>
             </section>
 

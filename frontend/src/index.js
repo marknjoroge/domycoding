@@ -12,6 +12,7 @@ import {
 import HomePage from './Home';
 import Test from './Test'
 import ContactUs from './ContactUs';
+import FAQ from './FAQ';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +21,8 @@ root.render(
       <Switch>
         <Route path="/"> */}
     {/* <HomePage /> */}
-    <ContactUs></ContactUs>
+    {/* <ContactUs></ContactUs> */}
+    <FAQ></FAQ>
     {/* <Test></Test> */}
     {/* </Route>
       </Switch>

@@ -1,0 +1,31 @@
+#faq-header .a-container {
+    color: #ffffff;
+    font-size: 23px;
+    margin: 0;
+}
+
+.faq-nav {
+    /* padding: 10px; */
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.faq-nav .plus {
+    color: #d8f366;
+    /* font-size: 40px; */
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px;
+}
+
+.faq-nav:hover {
+    cursor: pointer;
+}
+
+hr {
+    background-color: #fffbfb57;
+}
+
+.faq-nav:hover hr {
+    background-color: #d8f366;
+}
