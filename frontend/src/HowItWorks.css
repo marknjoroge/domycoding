@@ -1,0 +1,13 @@
+.how-step {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.how-steps {
+    padding: 40px;
+    max-width: 600px;
+}
+
+.calc-sec {
+    padding: 40px 0px;
+}
