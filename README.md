@@ -2,4 +2,4 @@
 
 A [DoMyCoding](https://domycoding.com/) clone
 
-Bulit with React js & Express JS
+Built with React js, Express JS, Node JS.
